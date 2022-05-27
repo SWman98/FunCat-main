@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+        <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+
+	<typeAliases>
+		<typeAlias alias="BoardVO" type="funcat.board.domain.BoardVO"/>
+	
+		<typeAlias alias="Mypage" type="funcat.bd.domain.Mypage"/>
+	
+		<typeAlias alias="Member" type="team4.md.domain.Member"/>
+		<typeAlias alias="Project" type="team4.md.domain.Project"/>
+	</typeAliases>
+
+
+	<mappers>
+		<mapper resource="funcat/board/mapper/board.xml"/>
+	
+		<mapper resource="funcat/bd/mapper/MypageMapper.xml"/>
+		
+		<mapper resource="fc/noticeboard/mapper/NoticeBoardMapper.xml"/>
+		<mapper resource="fc/noticeboard/mapper/ProjectBoardMapper.xml"/>
+	
+		<mapper resource="team4/md/mapper/LoginMapper.xml"/>
+		<mapper resource="team4/md/mapper/ProjectMapper.xml"/>
+	</mappers>
+</configuration>
